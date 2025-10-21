@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Striped Table</title>
+<style>
+  #myTable {
+    width: 100%;
+    font-family: sans-serif;
+    color: white;
+    text-align: left;
+    border-collapse: collapse;
+    border: 1px solid gray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: red;
+  }
+
+  #myTable td, #myTable th {
+    padding: 8px;
+    border: 1px solid gray;
+  }
+
+  #myTable thead {
+    background-color: pink;
+  }
+
+  #myTable th {
+    color: orange;
+  }
+
+  #myTable tr:nth-child(even) {
+    background-color: grey;
+  }
+
+  #myTable tr:hover {
+    background-color: blue;
+  }
+</style>
+</head>
+<body>
+
+<table id="myTable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Course</th>
+      <th>Hobby</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anu</td>
+      <td>BCA</td>
+      <td>Reading</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Sana</td>
+      <td>MCA</td>
+      <td>Cooking</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Vinu</td>
+      <td>MTech</td>
+      <td>Watching</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Binu</td>
+      <td>MTech</td>
+      <td>Playing</td>
+      <td>20</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
+

@@ -1,0 +1,24 @@
+p {
+  color: white;
+  background-color: blue;
+  padding: 10px;
+}
+
+.highlight {
+  color: darkblue;
+  background-color: lightyellow;
+  padding: 10px;
+}
+
+#special {
+  color: white;
+  background-color: darkred;
+  padding: 10px;
+}
+
+.container{
+  color: black;
+  background-color: lightgreen;
+  padding: 10px;
+}
+

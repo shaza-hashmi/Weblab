@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration Form</title>
+</head>
+<body>
+
+<h2 align="center">Student Registration Form</h2>
+
+<form>
+<table border="1" align="center" cellpadding="8" cellspacing="0">
+
+<tr>
+    <td>First Name</td>
+    <td><input type="text" name="fname" maxlength="30" placeholder="Enter First Name" required></td>
+</tr>
+
+<tr>
+    <td>Last Name</td>
+    <td><input type="text" name="lname" maxlength="30" placeholder="Enter Last Name"></td>
+</tr>
+
+<tr>
+    <td>Date of Birth</td>
+    <td><input type="date" name="dob"></td>
+</tr>
+
+<tr>
+    <td>Email</td>
+    <td><input type="email" name="email"></td>
+</tr>
+
+<tr>
+    <td>Mobile Number</td>
+    <td><input type="text" name="mobile" maxlength="10" placeholder="10 digits only"></td>
+</tr>
+
+<tr>
+    <td>Gender</td>
+    <td>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+    </td>
+</tr>
+
+<tr>
+    <td>Address</td>
+    <td><textarea name="address" rows="3" cols="40"></textarea></td>
+</tr>
+
+<tr>
+    <td>City</td>
+    <td><input type="text" name="city" maxlength="30"></td>
+</tr>
+
+<tr>
+    <td>Pincode</td>
+    <td><input type="text" name="pincode" maxlength="6"></td>
+</tr>
+
+<tr>
+    <td>State</td>
+    <td><input type="text" name="state" maxlength="30"></td>
+</tr>
+
+<tr>
+    <td>Country</td>
+    <td><input type="text" value="India" readonly></td>
+</tr>
+
+<tr>
+    <td>Hobbies</td>
+    <td>
+        <input type="checkbox" name="hobby" value="Drawing"> Drawing
+        <input type="checkbox" name="hobby" value="Swimming"> Swimming
+        <input type="checkbox" name="hobby" value="Singing"> Singing
+        <input type="checkbox" name="hobby" value="Others"> Others
+        <input type="text" name="otherHobby" placeholder="If others, specify">
+    </td>
+</tr>
+
+<tr>
+    <td>Qualification</td>
+    <td>
+        <table border="1" width="100%">
+            <tr>
+                <th>Sl No.</th>
+                <th>Examination</th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>Year of Passing</th>
+            </tr>
+            <tr>
+                <td>1</td><td>Class X</td>
+                <td><input type="text" name="board1"></td>
+                <td><input type="text" name="percent1"></td>
+                <td><input type="text" name="year1"></td>
+            </tr>
+            <tr>
+                <td>2</td><td>Class XII</td>
+                <td><input type="text" name="board2"></td>
+                <td><input type="text" name="percent2"></td>
+                <td><input type="text" name="year2"></td>
+            </tr>
+            <tr>
+                <td>3</td><td>Graduation</td>
+                <td><input type="text" name="board3"></td>
+                <td><input type="text" name="percent3"></td>
+                <td><input type="text" name="year3"></td>
+            </tr>
+            <tr>
+                <td>4</td><td>Masters</td>
+                <td><input type="text" name="board4"></td>
+                <td><input type="text" name="percent4"></td>
+                <td><input type="text" name="year4"></td>
+            </tr>
+        </table>
+    </td>
+</tr>
+
+<tr>
+    <td>Course Applied For</td>
+    <td>
+        <input type="radio" name="course" value="MCA"> MCA
+        <input type="radio" name="course" value="M.Tech"> M.Tech
+        <input type="radio" name="course" value="MSc"> MSc
+        <input type="radio" name="course" value="PhD"> PhD
+    </td>
+</tr>
+
+<tr>
+    <td>Password</td>
+    <td><input type="password" name="password" maxlength="30"></td>
+</tr>
+
+<tr>
+    <td>Upload Your Photo</td>
+    <td><input type="file" name="photo"></td>
+</tr>
+
+<tr>
+    <td>Date of TC</td>
+    <td><input type="date" name="tc"></td>
+</tr>
+
+<tr>
+    <td colspan="2" align="center">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </td>
+</tr>
+
+</table>
+</form>
+
+</body>
+</html>
+

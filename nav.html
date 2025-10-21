@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Side Navigation */
+    .side-nav {
+      width: 200px;
+      height: 100vh;
+      background-color: #333;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 20px;
+    }
+
+    .side-nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      transition: background 0.3s;
+    }
+
+    .side-nav a:hover {
+      background-color: #575757;
+    }
+
+    /* Main Content */
+    .main {
+      margin-left: 200px; /* Same as sidebar width */
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="side-nav">
+    <a href="#">Mission</a>
+    <a href="#">Vision</a>
+    <a href="#">About Us</a>
+    <a href="#">Departments</a>
+    <a href="#">Contact Us</a>
+  </div>
+
+  <div class="main">
+    <h1>Side Bar Example</h1>
+    <p>This is the main content area.</p>
+  </div>
+
+</body>
+</html>
+

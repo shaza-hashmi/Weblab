@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple String & Math Functions</title>
+</head>
+<body>
+
+  <h2>String Functions</h2>
+  <input id="strInput" placeholder="Enter a string" value="Hello World">
+  <button onclick="showString()">Show String Results</button>
+  <p id="strResult"></p>
+
+  <h2>Math Functions</h2>
+  <input id="numInput" type="number" placeholder="Enter a number" value="7.8">
+  <button onclick="showMath()">Show Math Results</button>
+  <p id="mathResult"></p>
+
+  <script>
+    function showString() {
+      let s = document.getElementById('strInput').value;
+      let result = 
+        "Uppercase: " + s.toUpperCase() + "<br>" +
+        "Lowercase: " + s.toLowerCase() + "<br>" +
+        "Includes 'World': " + s.includes("World") + "<br>" +
+        "Slice(0,5): " + s.slice(0,5);
+      document.getElementById('strResult').innerHTML = result;
+    }
+
+    function showMath() {
+      let n = parseFloat(document.getElementById('numInput').value);
+      if (isNaN(n)) {
+        document.getElementById('mathResult').textContent = "Please enter a valid number.";
+        return;
+      }
+      let result = 
+        "Round: " + Math.round(n) + "<br>" +
+        "Floor: " + Math.floor(n) + "<br>" +
+        "Ceil: " + Math.ceil(n) + "<br>" +
+        "Random (0 to 1): " + Math.random().toFixed(3);
+      document.getElementById('mathResult').innerHTML = result;
+    }
+  </script>
+
+</body>
+</html>
+
